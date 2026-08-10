@@ -1,0 +1,15 @@
+.layout-content{
+    display: flex;
+    flex-direction: row;
+}
+
+.main-content{
+    flex: 1;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .layout-content {
+        flex-direction: column;
+    }
+}

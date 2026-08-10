@@ -23,11 +23,6 @@ Developer productivity platform built while relearning Full Stack Development.
 
 Project documentation is available inside the `/docs` folder.
 
-## Progress
-
-- [x] Session 1 - Project Setup
-- [ ] Session 2 - Frontend Architecture
-- [ ] Session 3 - Authentication
 
 ## Project Structure
 
@@ -63,3 +58,17 @@ The frontend follows a scalable architecture.
 - Outlet
 - JavaScript Modules
 - Project documentation
+
+### ✅ Session 3
+
+- Navigation components
+- Navbar, Sidebar and Footer
+- Link vs NavLink
+- Active route highlighting
+- Component composition
+- Flexbox layout
+- Responsive layout
+- Component-specific CSS
+- Shared CSS selectors
+- Media queries
+- `box-sizing: border-box`
