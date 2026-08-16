@@ -1,6 +1,4 @@
-import Button from "../../components/ui/Button";
-import Card from "../../components/ui/Card";
-import Badge from "../../components/ui/Badge";
+import ProjectCard from "../../components/common/ProjectCard";
 import Input from "../../components/ui/Input";
 import { useState } from "react";
 function Projects() {
@@ -8,6 +6,11 @@ function Projects() {
     function handleChange(event){
         setProjectName(event.target.value);
         }
+    const projects=[
+        {id:1, name:"Project 1", status:"active"},
+        {id:2, name:"Project 2", status:"pending"},
+        {id:3, name:"Project 3", status:"completed"},
+        ]
   return (
     <div>
       <h1>Projects</h1>
@@ -16,11 +19,7 @@ function Projects() {
       <Button text="Delete" variant="danger" />
 
         <Input type="text" placeholder="Enter project name" value={projectName} onChange={handleChange} />
-        <Card>
-            <h2>Project 1</h2>
-            <Badge text="Active" status="active" />
-            <Button text="View Project" />
-        </Card>
+        {projects.map(p=>(<ProjectCard key={p.id} project={p} />))}
     </div>
   );
 }
