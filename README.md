@@ -1,1168 +1,1102 @@
 # DevTrack
 
-DevTrack is a frontend project management application built with React, Vite, and Tailwind CSS.
+A structured React learning project focused on learning modern frontend development through practical implementation.
 
-The project is being developed session-by-session to build a professional frontend architecture while learning React concepts through practical implementation.
-
----
-
-# Project Structure
-
-```text
-DevTrack/
-│
-├── frontend/
-│   ├── src/
-│   │   ├── assets/
-│   │   │
-│   │   ├── components/
-│   │   │   ├── common/
-│   │   │   │   └── ProjectCard.jsx
-│   │   │   │
-│   │   │   ├── layout/
-│   │   │   │   ├── MainLayout.jsx
-│   │   │   │   ├── Navbar.jsx
-│   │   │   │   ├── Sidebar.jsx
-│   │   │   │   └── Footer.jsx
-│   │   │   │
-│   │   │   └── ui/
-│   │   │       ├── Button.jsx
-│   │   │       ├── Card.jsx
-│   │   │       ├── Badge.jsx
-│   │   │       └── Input.jsx
-│   │   │
-│   │   ├── pages/
-│   │   │   ├── Dashboard/
-│   │   │   ├── Projects/
-│   │   │   ├── Tasks/
-│   │   │   └── NotFound/
-│   │   │
-│   │   ├── hooks/
-│   │   ├── services/
-│   │   ├── utils/
-│   │   ├── context/
-│   │   ├── constants/
-│   │   ├── routes/
-│   │   ├── styles/
-│   │   └── App.jsx
-│   │
-│   ├── package.json
-│   ├── vite.config.js
-│   └── ...
-│
-└── docs/
-```
+The project is developed session by session, with every session focusing on a specific React or frontend concept and ending with a practical milestone.
 
 ---
 
-# Session 1 - Project Setup
+## Project Goals
 
-## Completed
+The main goals of this project are:
 
-* Initialized the DevTrack project.
+* Learn React fundamentals through practical implementation.
+* Understand component-based architecture.
+* Build reusable React components.
+* Understand data flow between components.
+* Learn React state management.
+* Practice dynamic rendering.
+* Build real application functionality instead of isolated examples.
+* Maintain proper Git and project documentation practices.
+* Build a strong foundation for larger React applications.
+
+---
+
+## Tech Stack
+
+### Frontend
+
+* React
+* JavaScript
+* Vite
+* Tailwind CSS
+* HTML
+* CSS
+
+### Development Tools
+
+* Node.js
+* npm
+* Git
+* GitHub
+* VS Code
+
+---
+
+## Project Structure
+
+The project follows a component-based React architecture.
+
+Main areas include:
+
+* Pages
+* Common components
+* UI components
+* Project documentation
+
+The structure is designed to keep reusable components separate from page-specific application logic.
+
+---
+
+# Learning Sessions
+
+## Session 1 - Project Setup
+
+### Topics
+
+* Project initialization
+* Vite
+* React application setup
+* Tailwind CSS
+* Git
+* GitHub
+* Project documentation
+
+### Completed
+
+* Initialized the project monorepo.
 * Configured Git.
 * Configured GitHub SSH authentication.
 * Created the React application using Vite.
-* Installed and configured Tailwind CSS.
+* Installed Tailwind CSS.
 * Created the first React page.
-* Established the project documentation structure.
+* Created the initial documentation structure.
+
+### Status
+
+Completed
 
 ---
 
-# Session 2 - Frontend Architecture & Routing
+## Session 2 - Frontend Architecture
 
-## Completed
+### Topics
 
-* Created professional frontend folder architecture.
-* Created route-level pages:
+* React project structure
+* Component organization
+* Reusable components
+* Page-level components
+* UI components
+* Separation of concerns
 
-    * Dashboard
-    * Projects
-    * Tasks
-    * NotFound
-* Created shared `MainLayout`.
-* Integrated React Router.
-* Implemented nested routing.
-* Used React Router `Outlet`.
-* Centralized application routes.
-* Added 404 route handling.
-* Added project documentation.
+### Completed
 
-## Concepts Learned
+* Established the frontend folder structure.
+* Organized components into reusable categories.
+* Created common UI components.
+* Created page-level components.
+* Established separation between reusable UI components and page-level components.
+* Improved project organization for scalability.
 
-* Pages vs Components.
-* Layout architecture.
-* `BrowserRouter`, `Routes`, and `Route`.
-* Nested routing.
-* `Outlet`.
-* JavaScript modules.
-* Default vs named exports.
-* Debugging package installation issues.
+### Status
+
+Completed
 
 ---
 
-# Session 3 - Navigation & Layout Components
+## Session 3 - Navigation & Layout Components
 
-## Completed
+### Topics
 
-* Created reusable Navbar component.
-* Created reusable Sidebar component.
-* Created reusable Footer component.
-* Added Dashboard, Projects, and Tasks navigation.
-* Added active route highlighting using `NavLink`.
-* Added component-specific CSS.
-* Created a Flexbox-based application layout.
-* Added responsive layout behavior.
-* Added responsive Sidebar navigation.
-* Added shared CSS styling for navigation states.
-* Added `box-sizing: border-box`.
-* Implemented full-height application layout.
-* Configured full-width `#root`.
+* React Router
+* Navigation
+* Layout components
+* Page routing
+* Application structure
 
-## Concepts Learned
+### Completed
 
-* `Link` vs `NavLink`.
-* Active route detection using `isActive`.
-* Component composition.
-* Semantic HTML.
-* `nav`, `main`, and `footer`.
-* Flexbox.
-* `display: flex`.
-* `flex-direction`.
-* `flex`.
-* `gap`.
-* Responsive design.
-* Media queries.
-* Shared CSS selectors.
-* `box-sizing: border-box`.
-* Separation of concerns between Layout and Pages.
+* Implemented application navigation.
+* Created reusable layout components.
+* Added page-level routing.
+* Connected application pages through navigation.
+* Established a consistent application layout.
+* Practiced navigation between different pages.
+
+### Status
+
+Completed
 
 ---
 
-# Session 4 - Reusable UI Components
+## Session 4 - Props and Component Reusability
 
-## Completed
+### Topics
 
-* Created reusable `Button` component.
-* Created reusable `Card` component.
-* Created reusable `Badge` component.
-* Created reusable `Input` component.
-* Added component props.
-* Added props destructuring.
-* Added default prop values.
-* Added Button variants.
-* Added Badge status variants.
-* Added `children` support to Card.
-* Added controlled Input behavior.
-* Used reusable components inside the Projects page.
-* Practiced component composition.
-* Separated generic UI components from page-specific logic.
-* Refactored variant styling using lookup objects.
-* Verified the production build successfully.
+* React props
+* Parent-to-child communication
+* Props destructuring
+* Reusable components
+* Component configuration
 
-## Reusable Components
+### Completed
 
-### Button
+* Introduced React props.
+* Practiced passing data from parent components to child components.
+* Practiced destructuring props.
+* Built reusable components using props.
+* Added configurable component properties.
+* Added support for reusable component variants.
+* Practiced passing different data to the same component.
+* Improved component reusability.
 
-Supports:
+### Status
 
-* `text`
-* `variant`
-* `primary`
-* `secondary`
-* `danger`
-
-### Card
-
-Supports:
-
-* `children`
-
-Allows arbitrary content to be composed inside the Card.
-
-### Badge
-
-Supports:
-
-* `text`
-* `status`
-* `active`
-* `completed`
-* `pending`
-* `progress`
-
-### Input
-
-Supports:
-
-* `type`
-* `placeholder`
-* `value`
-* `onChange`
-
-Used as a controlled React input.
-
-## Concepts Learned
-
-* Props.
-* Props destructuring.
-* Default prop values.
-* JSX expressions using `{}`.
-* `children`.
-* Component variants.
-* Lookup objects for styling.
-* Event handler props.
-* `useState`.
-* Controlled inputs.
-* `event.target.value`.
-* Component composition.
-* Separation of concerns.
-* Reusable UI architecture.
+Completed
 
 ---
 
-# Session 5 - Dynamic Data & List Rendering
+## Session 5 - Dynamic Data Rendering
 
-## Completed
+### Topics
 
-* Converted project information into an array of objects.
-* Implemented dynamic project rendering using JavaScript `.map()`.
-* Rendered multiple project cards dynamically.
-* Added unique React `key` values using project IDs.
-* Passed project data dynamically through props.
-* Passed complete project objects as props.
-* Implemented dynamic Badge status rendering.
-* Reused the existing Button component inside project cards.
-* Reused the existing Card component.
-* Reused the existing Badge component.
-* Created the reusable `ProjectCard` domain component.
-* Composed `ProjectCard` using `Card`, `Badge`, and `Button`.
-* Separated generic UI components from project-specific UI logic.
-* Practiced object props.
-* Practiced props destructuring.
-* Verified the production build successfully.
+* Dynamic rendering
+* JavaScript map()
+* React list rendering
+* React keys
+* Data-driven UI
+* Reusable ProjectCard components
 
-## Project Data
+### Completed
 
-Projects are represented as an array of objects:
+* Introduced dynamic rendering in React.
+* Rendered arrays using map().
+* Created reusable ProjectCard components.
+* Passed project objects as props.
+* Used unique project IDs as React keys.
+* Created project data structures containing:
 
-```js
-const projects = [
-    {
-        id: 1,
-        name: "Project 1",
-        status: "active"
-    },
-    {
-        id: 2,
-        name: "Project 2",
-        status: "pending"
-    },
-    {
-        id: 3,
-        name: "Project 3",
-        status: "completed"
-    }
-];
-```
+    * id
+    * name
+    * status
+* Implemented dynamic status badges.
+* Practiced rendering UI from JavaScript data.
+* Established the initial Projects interface.
 
-Each project contains its own:
+### Status
 
-* `id`
-* `name`
-* `status`
-
-Adding another project only requires adding another object to the array.
+Completed
 
 ---
 
-## Static vs Dynamic UI
+# Session 6 - React State Management & CRUD
 
-A static approach manually repeats UI:
+## Topics
 
-```jsx
-<Card>
-    <h2>Project 1</h2>
-</Card>
-
-<Card>
-    <h2>Project 2</h2>
-</Card>
-
-<Card>
-    <h2>Project 3</h2>
-</Card>
-```
-
-The dynamic approach stores information as data:
-
-```js
-const projects = [
-    {
-        id: 1,
-        name: "Project 1"
-    },
-    {
-        id: 2,
-        name: "Project 2"
-    },
-    {
-        id: 3,
-        name: "Project 3"
-    }
-];
-```
-
-The UI is then generated from that data.
-
-The architectural idea is:
-
-```text
-Data
-    ↓
-UI transformation
-    ↓
-Rendered components
-```
-
-This improves scalability because adding a project requires changing the data rather than manually creating another JSX block.
+* useState
+* React state
+* State setters
+* React re-rendering
+* Functional state updates
+* Controlled inputs
+* Props
+* Callback functions
+* Parent-child communication
+* Immutable state updates
+* map()
+* filter()
+* find()
+* Spread operator
+* Derived data
+* Conditional rendering
+* CRUD operations
 
 ---
 
-## JavaScript `.map()`
+## Session 6 - State Management
 
-`.map()` is used to transform every element of an array into a new value.
+Implemented project state using React useState.
+
+The Projects component now manages:
+
+* projectName
+* editingProjectId
+* projects
+
+State is used instead of normal JavaScript variables so that changes to the data trigger React re-rendering.
+
+---
+
+## Session 6 - State and Re-rendering
+
+Learned the difference between a normal JavaScript variable and React state.
+
+A normal variable can change without causing React to render the component again.
+
+React state is different.
+
+When the state setter is called:
+
+* React updates the state.
+* React re-renders the component.
+* The component reads the latest state.
+* The UI reflects the new state.
+
+The basic React flow learned during this session is:
+
+User action
+→ Event handler
+→ State setter
+→ State update
+→ React re-render
+→ Updated UI
+
+---
+
+## Session 6 - State Setter
+
+Learned that useState provides two values:
+
+* The current state value.
+* A setter function used to update that state.
+
+For projects:
+
+* projects is the current project state.
+* setProjects is the function used to request an update to that state.
+
+Functional state updates were also practiced.
+
+The updater function receives the previous state and returns the new state.
+
+This is especially useful when the new state depends on the previous state.
+
+---
+
+# Projects CRUD Feature
+
+The Projects page now supports all four CRUD operations.
+
+CRUD means:
+
+* Create
+* Read
+* Update
+* Delete
+
+---
+
+## Create
+
+Users can create a new project.
+
+### Flow
+
+User enters a project name.
+
+The input updates projectName state.
+
+The user clicks Create Project.
+
+handleCreateProject creates a new project.
+
+The new project is added to the existing projects array.
+
+React re-renders the component and the new project appears in the UI.
+
+### Concepts Used
+
+* useState
+* Controlled input
+* Event handling
+* Functional state update
+* Spread operator
+* Array state
+
+---
+
+## Read
+
+Projects are displayed dynamically from the projects state.
+
+The project array is rendered using map().
+
+Each project is passed to ProjectCard through props.
+
+Unique project IDs are used as React keys.
+
+### Concepts Used
+
+* map()
+* Props
+* React key
+* Dynamic rendering
+* Component composition
+
+---
+
+## Update
+
+Users can edit an existing project.
+
+### Flow
+
+User clicks Edit.
+
+ProjectCard sends the project ID to the parent.
+
+The parent stores the ID in editingProjectId.
+
+The project is located using find().
+
+The existing project name is placed into the controlled input.
+
+The user changes the name.
+
+The user clicks Save.
+
+The projects array is mapped.
+
+The project with the matching ID is replaced with an updated object.
+
+editingProjectId is reset.
+
+React re-renders the updated project.
+
+### Concepts Used
+
+* Props
+* Callback functions
+* find()
+* map()
+* Object spread
+* Controlled input
+* Conditional rendering
+* Functional state updates
+
+---
+
+## Delete
+
+Users can delete a project.
+
+### Flow
+
+User clicks Delete.
+
+ProjectCard sends the project ID to the parent.
+
+The parent receives the ID.
+
+filter() creates a new array containing every project except the selected project.
+
+The new array is passed to setProjects.
+
+React re-renders the project list.
+
+### Concepts Used
+
+* Props
+* Callback functions
+* filter()
+* Functional state updates
+* Immutable updates
+
+---
+
+# Parent-Child Communication
+
+The Projects component owns the project state.
+
+ProjectCard receives data and callback functions through props.
+
+Parent to child:
+
+Projects
+→ project
+→ onDelete
+→ onEdit
+→ ProjectCard
+
+Child to parent:
+
+ProjectCard
+→ onDelete(project.id)
+→ handleDelete()
+
+ProjectCard
+→ onEdit(project.id)
+→ handleEdit()
+
+This reinforces the React principle that the parent owns the state while child components can request actions through callback props.
+
+---
+
+# Controlled Input
+
+The project name input is controlled by React state.
+
+The input uses:
+
+* value={projectName}
+* onChange={handleChange}
+
+The value displayed in the input therefore comes from React state.
+
+When the user types:
+
+Input event
+→ handleChange()
+→ setProjectName()
+→ state changes
+→ React re-renders
+→ input displays the updated value
+
+The same input is also reused for editing an existing project.
+
+---
+
+# Immutable State Updates
+
+State is updated without directly modifying the existing arrays or objects.
+
+## Adding
+
+The spread operator is used to create a new array containing the previous projects and the new project.
+
+## Deleting
+
+filter() creates a new array without the selected project.
+
+## Updating
+
+map() creates a new array.
+
+Object spread creates a new project object while replacing only the property that needs to change.
+
+This approach keeps state updates predictable and follows React's immutable update pattern.
+
+---
+
+# JavaScript Methods Practiced
+
+## map()
+
+Used for:
+
+* Rendering projects.
+* Updating a specific project.
+
+## filter()
+
+Used for:
+
+* Removing a project.
+* Creating a new filtered array.
+
+## find()
+
+Used for:
+
+* Locating the project currently being edited.
+
+## length
+
+Used for:
+
+* Counting projects.
+* Checking whether the project list is empty.
+* Generating the next project ID in the current implementation.
+
+---
+
+# Derived Data
+
+Learned that values that can be calculated from existing state usually do not need their own state.
 
 Example:
 
-```js
-const numbers = [1, 2, 3];
+totalProjects can be calculated from projects.length.
 
-const doubled = numbers.map(number => number * 2);
-```
+activeProjects can be calculated using:
 
-Result:
+projects.filter(p => p.status === "active").length
 
-```js
-[2, 4, 6]
-```
+The projects array remains the source of truth.
 
-The callback receives the current array element.
-
-For an array of projects:
-
-```js
-projects.map(project => ...)
-```
-
-`project` represents the current project object.
-
-`.map()` returns a new array and does not modify the original array.
+This prevents duplicated state from becoming inconsistent.
 
 ---
 
-## Rendering Lists in React
+# Conditional Rendering
 
-React can use `.map()` to generate multiple React elements:
+Conditional rendering was implemented using the ternary operator.
+
+The application switches between Create mode and Edit mode.
+
+When editingProjectId is null:
+
+* Create Project button is displayed.
+
+When editingProjectId contains a project ID:
+
+* Save button is displayed.
+
+An empty state was also implemented.
+
+When projects.length is zero:
+
+* No Projects Found is displayed.
+
+Otherwise:
+
+* The project list is rendered.
+
+---
+
+# Final Session 6 Milestone
+
+The Projects page is now a functional React CRUD interface.
+
+It supports:
+
+* Creating projects.
+* Displaying projects.
+* Editing projects.
+* Updating projects.
+* Deleting projects.
+* Empty-state rendering.
+* Controlled inputs.
+* Parent-child communication.
+* Conditional Create/Edit UI.
+* React state management.
+* Immutable state updates.
+
+---
+
+# Session 7 - React Forms & Validation
+
+## Topics
+
+* React forms
+* onSubmit
+* event.preventDefault()
+* Controlled inputs
+* Form state
+* Validation state
+* Input validation
+* Error messages
+* trim()
+* Form reset
+* Conditional rendering
+* Create mode
+* Edit mode
+* Cancel Edit
+* type="submit"
+* type="button"
+* Form state vs application state
+
+---
+
+## Session 7 - React Forms
+
+The Projects page was converted to use a proper HTML form.
+
+The form now handles submission through:
 
 ```jsx
-{projects.map(project => (
-    <Card>
-        <h2>{project.name}</h2>
-    </Card>
-))}
+<form onSubmit={handleSubmit}>
 ```
+
+Instead of relying on a Create button's `onClick`, the form itself manages submission.
+
+This also allows the form to be submitted using the Enter key.
+
+---
+
+## Session 7 - preventDefault()
+
+The form submission handler uses:
+
+```jsx
+event.preventDefault();
+```
+
+This prevents the browser's default form submission behavior and allows React to handle the submission.
 
 The flow is:
 
-```text
-Array of data
-      ↓
-.map()
-      ↓
-Array of React elements
-      ↓
-Rendered UI
-```
-
-If the array contains three projects, `.map()` produces three rendered project elements.
+User submits form
+→ onSubmit
+→ preventDefault()
+→ Validation
+→ Create or Update
 
 ---
 
-## React `key`
+## Session 7 - Validation
 
-When rendering a list, React needs a stable `key` for each item.
+Project names are now validated before modifying the projects state.
 
-Example:
+The validation rules are:
 
-```jsx
-{projects.map(project => (
-    <Card key={project.id}>
-        <h2>{project.name}</h2>
-    </Card>
-))}
-```
+* Project name cannot be empty.
+* Project name cannot contain only whitespace.
+* Project name cannot exceed 50 characters.
 
-The `key` allows React to identify individual list items when the list changes.
-
-A unique project ID is preferred:
+The validation uses:
 
 ```jsx
-key={project.id}
+projectName.trim()
 ```
 
-instead of relying on the array index:
-
-```jsx
-key={index}
-```
-
-The array index represents the item's position, which can change when items are added, removed, or reordered.
-
-The project ID represents the identity of the project and should remain stable.
+to remove surrounding whitespace and detect whitespace-only input.
 
 ---
 
-## Dynamic Props
+## Session 7 - Validation State
 
-Project data can be passed into reusable components dynamically.
-
-Example:
+A separate error state was introduced:
 
 ```jsx
-<Badge
-    text={project.status}
-    status={project.status}
-/>
+const [error, setError] = useState("");
 ```
 
-The data flow is:
-
-```text
-Project Data
-     ↓
-Dynamic Props
-     ↓
-Reusable Component
-     ↓
-Dynamic UI
-```
-
-If the status changes from:
-
-```text
-active
-```
-
-to:
-
-```text
-completed
-```
-
-the Badge receives the new value automatically.
-
----
-
-## Dynamic Project List
-
-The Projects page now renders projects dynamically:
-
-```jsx
-{projects.map(p => (
-    <ProjectCard
-        key={p.id}
-        project={p}
-    />
-))}
-```
-
-Adding another project:
-
-```js
-{
-    id: 4,
-    name: "New Project",
-    status: "active"
-}
-```
-
-automatically produces another project card.
-
-No additional JSX block is required.
-
----
-
-## ProjectCard
-
-A domain-specific `ProjectCard` component was created:
-
-```text
-components/
-└── common/
-    └── ProjectCard.jsx
-```
-
-`ProjectCard` composes existing generic UI components:
-
-```text
-ProjectCard
-│
-├── Card
-├── Badge
-└── Button
-```
-
-The component receives project data through props:
-
-```jsx
-<ProjectCard project={project} />
-```
-
-Example implementation:
-
-```jsx
-function ProjectCard({ project }) {
-    return (
-        <Card>
-            <h2>{project.name}</h2>
-            <Badge
-                text={project.status}
-                status={project.status}
-            />
-            <Button text="View Project" />
-        </Card>
-    );
-}
-```
-
-`ProjectCard` contains project-specific UI composition while the generic components remain reusable.
-
----
-
-## Object Props
-
-An entire object can be passed as a prop:
-
-```jsx
-<ProjectCard project={project} />
-```
-
-Here, `project` is the JavaScript object.
+When validation fails, the error message is stored in state.
 
 For example:
 
-```js
-const project = {
-    id: 1,
-    name: "DevTrack",
-    status: "active"
-};
-```
-
-Inside `ProjectCard`, the object can be accessed through:
-
 ```jsx
-props.project
+setError("Project name cannot be empty");
 ```
 
-This is different from:
-
-```jsx
-<ProjectCard project="project" />
-```
-
-The first passes the JavaScript object.
-
-The second passes the literal string `"project"`.
+The error is then conditionally rendered near the input.
 
 ---
 
-## Props Destructuring
+## Session 7 - Form Submission
 
-Without destructuring:
+The `handleSubmit()` function is now the central entry point for Create and Edit operations.
+
+The flow is:
+
+User submits form
+→ preventDefault()
+→ Validate input
+→ Clear error if valid
+→ Check editingProjectId
+→ Create or Save
+
+This prevents invalid data from reaching `setProjects()`.
+
+---
+
+## Session 7 - Create Mode
+
+When:
 
 ```jsx
-function ProjectCard(props) {
-    return <h2>{props.project.name}</h2>;
-}
+editingProjectId === null
 ```
 
-With destructuring:
+the form is in Create mode.
+
+The UI displays:
+
+* Project Name
+* Create Project
+
+The Create button uses:
 
 ```jsx
-function ProjectCard({ project }) {
-    return <h2>{project.name}</h2>;
-}
+type="submit"
 ```
 
-The `{ project }` syntax extracts the `project` property from the props object.
+so the form's `onSubmit` handler is triggered.
 
-This allows direct access to:
+---
+
+## Session 7 - Edit Mode
+
+When:
 
 ```jsx
-project.name
-project.status
+editingProjectId !== null
+```
+
+the form is in Edit mode.
+
+The existing project name is loaded into the controlled input.
+
+The UI displays:
+
+* Project Name
+* Save
+* Cancel
+
+The same form and input are reused for editing.
+
+---
+
+## Session 7 - Cancel Edit
+
+A Cancel button was added for Edit mode.
+
+The Cancel button uses:
+
+```jsx
+type="button"
 ```
 
 instead of:
 
 ```jsx
-props.project.name
-props.project.status
+type="submit"
 ```
+
+This prevents Cancel from triggering `handleSubmit()`.
+
+The Cancel flow is:
+
+Click Cancel
+→ handleCancel()
+→ Clear editingProjectId
+→ Clear projectName
+→ Clear error
+→ Return to Create mode
+
+The original project remains unchanged.
 
 ---
 
-## Component Composition With Dynamic Data
+## Session 7 - Form Reset
 
-Session 4 established reusable generic components:
+The form is reset after successful Create and Update operations.
 
-```text
-Button
-Card
-Badge
-Input
-```
+After creating a project:
 
-Session 5 builds a domain-specific component on top of them:
+* projectName is cleared.
 
-```text
-ProjectCard
-│
-├── Card
-├── Badge
-└── Button
-```
+After updating a project:
 
-The Projects page provides the data:
+* editingProjectId is cleared.
+* projectName is cleared.
 
-```text
-Projects
-    │
-    │ project data
-    ▼
-ProjectCard
-    │
-    ├── Card
-    ├── Badge
-    └── Button
-```
+When the user starts typing after a validation error:
 
-This allows the same reusable components to work with different project data.
+* The error is cleared.
+
+This creates a cleaner form experience.
 
 ---
 
-## Data/UI Separation
+## Session 7 - Form State vs Application State
 
-The Projects page owns project data:
+The session reinforced the difference between form state and application state.
 
-```js
-const projects = [
-    {
-        id: 1,
-        name: "Project 1",
-        status: "active"
-    }
-];
-```
+### Form State
 
-The `ProjectCard` owns project-specific UI composition.
+* projectName
+* editingProjectId
+* error
 
-Generic components remain independent:
+These values represent temporary user interaction.
 
-```text
-Button
-Card
-Badge
-Input
-```
+### Application State
 
-This keeps responsibilities separated:
+* projects
 
-```text
-Data
-  ↓
-Projects Page
-  ↓
-ProjectCard
-  ↓
-Generic UI Components
-```
+This represents the saved project data managed by the application.
 
-This architecture improves maintainability and makes components easier to reuse.
+The separation makes state responsibilities easier to understand.
 
 ---
 
-# Tailwind CSS
+## Session 7 - CRUD + Validation
 
-DevTrack uses Tailwind CSS v4 with Vite.
+The existing CRUD functionality was preserved while adding form validation.
 
-## Installation
+### Create
 
-```bash
-npm install tailwindcss @tailwindcss/vite
-```
+Enter name
+→ Submit
+→ Validate
+→ Create project
+→ Clear form
 
-## Vite Configuration
+### Read
 
-```js
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
+projects
+→ map()
+→ ProjectCard
+→ UI
 
-export default defineConfig({
-  plugins: [react(), tailwindcss()],
-})
-```
+### Update
 
-## CSS Import
+Edit
+→ Load project
+→ Modify name
+→ Submit
+→ Validate
+→ Save
+→ Update project
 
-Tailwind is imported through the main CSS file:
+### Delete
 
-```css
-@import "tailwindcss";
-```
-
-## Tailwind Setup Flow
-
-```text
-package.json
-     │
-     ├── tailwindcss
-     └── @tailwindcss/vite
-              │
-              ▼
-       vite.config.js
-              │
-              └── tailwindcss()
-                     │
-                     ▼
-                 Vite
-                     │
-                     ▼
-                index.css
-                     │
-                     └── @import "tailwindcss"
-                              │
-                              ▼
-                     React Components
-```
+Delete
+→ Project ID
+→ filter()
+→ setProjects()
+→ Project removed
 
 ---
 
-# Important React Patterns
+## Session 7 - Important Button Types
 
-## Props
-
-Props allow a component to receive data from its parent.
-
-Example:
+The session introduced the difference between:
 
 ```jsx
-<Button text="Create Project" />
+type="submit"
 ```
 
-Inside the component:
+and:
 
 ```jsx
-function Button(props) {
-  return <button>{props.text}</button>
-}
+type="button"
 ```
+
+### Submit
+
+Create and Save use:
+
+```jsx
+type="submit"
+```
+
+because they should trigger the form's `onSubmit`.
+
+### Button
+
+Cancel uses:
+
+```jsx
+type="button"
+```
+
+because it should not trigger form submission.
+
+If Cancel were a submit button, it would call `handleSubmit()` and could cause the current edit to be saved.
 
 ---
 
-## Props Destructuring
+## Session 7 - Validation Flow
 
-Instead of:
+The final validation flow is:
 
-```jsx
-function Button(props) {
-  return <button>{props.text}</button>
-}
-```
+User submits form
+→ preventDefault()
+→ Check empty name
+→ Check maximum length
+→ Valid?
+→ Create or Save
 
-we can use:
-
-```jsx
-function Button({ text }) {
-  return <button>{text}</button>
-}
-```
+Invalid input stops the function before the project state is modified.
 
 ---
 
-## Default Props
+## Session 7 - Final Milestone
 
-A default value can be provided during destructuring:
+The Projects page now supports:
 
-```jsx
-function Button({ text, variant = "primary" }) {
-```
-
-If `variant` isn't provided, it automatically becomes `"primary"`.
-
----
-
-## Children
-
-Content placed between a component's opening and closing tags is available through `children`.
-
-Example:
-
-```jsx
-<Card>
-  <h2>Project 1</h2>
-</Card>
-```
-
-Inside Card:
-
-```jsx
-function Card(props) {
-  return (
-    <div>
-      {props.children}
-    </div>
-  )
-}
-```
+* Proper React form handling.
+* Controlled form inputs.
+* Form submission with onSubmit.
+* preventDefault().
+* Empty-name validation.
+* Whitespace validation.
+* Maximum 50-character validation.
+* Validation error state.
+* Error messages.
+* Error clearing while typing.
+* Form reset after successful creation.
+* Form reset after successful update.
+* Create mode.
+* Edit mode.
+* Cancel Edit.
+* Existing CRUD functionality.
 
 ---
 
-## Component Variants
+## Session 7 - Current Limitation
 
-Props can control a component's visual state.
+Project data is currently stored only in React state.
 
-Example:
+Therefore, newly created or updated projects are lost when the page is refreshed.
 
-```jsx
-<Button text="Delete" variant="danger" />
-```
+For example:
 
-A lookup object can map variants to styles:
+Create project
+→ Project appears
+→ Refresh page
+→ React state initializes again
+→ Newly created project disappears
 
-```js
-const buttonStyles = {
-  primary: "bg-blue-500 text-white",
-  secondary: "bg-gray-500 text-white",
-  danger: "bg-red-500 text-white",
-}
-```
+This is expected at the current stage.
 
-Then:
-
-```jsx
-className={buttonStyles[variant]}
-```
+Persistence using localStorage, APIs, or a backend has not yet been introduced.
 
 ---
 
-## Controlled Inputs
+# Current Project Status
 
-A controlled input receives its value from React state.
-
-Example:
-
-```jsx
-const [projectName, setProjectName] = useState("")
-```
-
-The Input receives:
-
-```jsx
-<Input
-  value={projectName}
-  onChange={handleChange}
-/>
-```
-
-The handler updates the state:
-
-```jsx
-function handleChange(event) {
-  setProjectName(event.target.value)
-}
-```
-
-The flow is:
-
-```text
-User types
-    ↓
-onChange
-    ↓
-handleChange(event)
-    ↓
-event.target.value
-    ↓
-setProjectName(...)
-    ↓
-projectName updates
-    ↓
-Input receives new value
-```
+| Session   | Topic                           | Status    |
+| --------- | ------------------------------- | --------- |
+| Session 1 | Project Setup                   | Completed |
+| Session 2 | Frontend Architecture           | Completed |
+| Session 3 | Navigation & Layout Components  | Completed |
+| Session 4 | Props and Component Reusability | Completed |
+| Session 5 | Dynamic Data Rendering          | Completed |
+| Session 6 | React State Management & CRUD   | Completed |
+| Session 7 | React Forms & Validation        | Completed |
 
 ---
 
-## Array `.map()`
+# Concepts Learned So Far
 
-`.map()` transforms each item in an array and returns a new array.
+The project currently demonstrates knowledge of:
 
-Example:
-
-```js
-const names = ["Rajat", "Aman", "Rahul"];
-
-const lengths = names.map(name => name.length);
-```
-
-Result:
-
-```js
-[5, 4, 5]
-```
-
-In React, `.map()` is commonly used for list rendering:
-
-```jsx
-{projects.map(project => (
-    <ProjectCard
-        key={project.id}
-        project={project}
-    />
-))}
-```
-
----
-
-## React Keys
-
-Keys provide stable identity to elements rendered from a list.
-
-Example:
-
-```jsx
-<ProjectCard
-    key={project.id}
-    project={project}
-/>
-```
-
-The `key` is primarily for React's internal reconciliation process.
-
-It should be:
-
-* Unique among sibling elements.
-* Stable.
-* Associated with the identity of the item.
+* React components
+* Component composition
+* Reusable components
+* Props
+* State
+* useState
+* State setters
+* React re-rendering
+* Controlled components
+* Controlled inputs
+* Event handling
+* Parent-to-child communication
+* Child-to-parent communication
+* Callback functions as props
+* Dynamic rendering
+* map()
+* filter()
+* find()
+* Spread operator
+* Immutable updates
+* Derived data
+* Conditional rendering
+* CRUD operations
+* React Router
+* Layout components
+* React forms
+* onSubmit
+* preventDefault()
+* Form state
+* Validation state
+* Input validation
+* trim()
+* Error handling
+* Form reset
+* Create/Edit modes
+* Cancel Edit
+* type="submit"
+* type="button"
+* Form state vs application state
+* Tailwind CSS
+* Vite
+* Git
+* GitHub
 
 ---
 
-## Dynamic Props
+# Documentation
 
-Dynamic props allow data to flow from arrays or objects into reusable components.
+Project documentation is maintained alongside the codebase.
 
-Example:
+Documentation includes:
 
-```jsx
-<Badge
-    text={project.status}
-    status={project.status}
-/>
-```
+* Session notes
+* Changelog
+* Project README
+* Learning milestones
+* Important React concepts
+* Implementation details
 
-The component receives different values depending on the current project.
-
----
-
-## Object Props
-
-A complete object can be passed as a prop:
-
-```jsx
-<ProjectCard project={project} />
-```
-
-The receiving component can access:
-
-```jsx
-project.name
-project.status
-```
-
-after destructuring.
+Each completed session is documented before moving to the next major learning milestone.
 
 ---
 
-# Component Composition
+# Git Workflow
 
-Reusable components can be combined to create larger UI structures.
+The project uses Git to track progress.
 
-Example:
+Typical workflow:
 
-```jsx
-<Card>
-  <h2>Project 1</h2>
-  <Badge text="Active" status="active" />
-  <Button text="View Project" />
-</Card>
 ```
-
-This creates:
-
-```text
-Card
-├── h2
-├── Badge
-└── Button
-```
-
-Session 5 extends this pattern through:
-
-```text
-ProjectCard
-├── Card
-├── Badge
-└── Button
-```
-
-The Card remains generic and does not need to know what a Project is.
-
----
-
-# Separation of Concerns
-
-Generic UI components:
-
-```text
-Button
-Card
-Badge
-Input
-```
-
-should remain independent from application-specific concepts.
-
-Page or domain components can contain project-specific logic:
-
-```text
-Projects
-ProjectCard
-TaskCard
-Dashboard
-```
-
-This keeps reusable components flexible and maintainable.
-
-The data-driven architecture now follows:
-
-```text
-Project Data
-    ↓
-Projects Page
-    ↓
-ProjectCard
-    ↓
-Generic UI Components
-```
-
----
-
-# Development Workflow
-
-Run the frontend from the `frontend` directory:
-
-```bash
-cd frontend
-npm run dev
-```
-
-Build the application:
-
-```bash
-npm run build
-```
-
-Check Git status:
-
-```bash
 git status
-```
 
-Stage changes:
-
-```bash
 git add .
-```
 
-Commit changes:
+git commit -m "Commit message"
 
-```bash
-git commit -m "feat: add dynamic project rendering"
-```
-
-Push changes:
-
-```bash
 git push
 ```
 
----
-
-# Session Milestones
-
-## Session 1
-
-Project setup and development environment established.
-
-## Session 2
-
-Frontend architecture and routing established.
-
-## Session 3
-
-Navigation and application layout completed.
-
-## Session 4
-
-Reusable UI component library established.
-
-## Session 5
-
-Dynamic project rendering and data-driven component architecture established.
+Each major learning session should result in a meaningful commit so that project progress can be tracked over time.
 
 ---
 
-# Learning Approach
+# Development Philosophy
 
-DevTrack is developed incrementally.
+This project focuses on understanding concepts rather than simply copying code.
 
-Each session focuses on:
+For every feature, the goal is to understand:
 
-1. Learning the required concepts.
-2. Thinking through the problem before implementation.
-3. Implementing concepts independently.
-4. Reviewing and improving the code.
-5. Updating project documentation.
-6. Creating a Git milestone.
-7. Pushing completed work to GitHub.
+1. What problem the feature solves.
+2. Why React is used for the solution.
+3. How data flows between components.
+4. How state changes.
+5. Why the UI re-renders.
+6. Why a particular JavaScript method is appropriate.
+7. How the implementation can be made reusable and maintainable.
 
-The architectural progression is:
+The project is built incrementally so that each session builds on the concepts learned in previous sessions.
 
-```text
-Static JSX
-    ↓
-Reusable Components
-    ↓
-Data Arrays
-    ↓
-.map()
-    ↓
-Dynamic Props
-    ↓
-Composed Components
-    ↓
-Data-Driven UI
-```
+---
+
+# Current Milestone
+
+Session 7 is complete.
+
+The project has progressed from a basic React application to a functional Projects interface with:
+
+* Component architecture
+* Reusable components
+* Props
+* Dynamic data rendering
+* React state management
+* Controlled inputs
+* Parent-child communication
+* CRUD functionality
+* Conditional rendering
+* Immutable state updates
+* React forms
+* Form submission
+* Input validation
+* Error handling
+* Create/Edit form modes
+* Cancel Edit
+
+The next session will build on this React foundation and introduce the next major concept in the DevTrack learning path.
