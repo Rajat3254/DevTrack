@@ -1,8 +1,9 @@
 import ProjectCard from "../../components/common/ProjectCard";
 import Input from "../../components/ui/Input";
 import Button from "../../components/ui/Button";
-import { useState } from "react";
+import { useState , useEffect} from "react";
 function Projects() {
+    const [isLoaded, setIsLoaded] = useState(false);
     const [error, setError] = useState("");
     const [projectName, setProjectName] = useState("");
     const [editingProjectId, setEditingProjectId] = useState(null);
@@ -11,6 +12,27 @@ function Projects() {
                                                      {id:2, name:"Project 2", status:"pending"},
                                                      {id:3, name:"Project 3", status:"completed"},
                                                  ])
+
+    useEffect(() => {
+        const savedProjects = localStorage.getItem("projects");
+
+        if (savedProjects) {
+            setProjects(JSON.parse(savedProjects));
+        }
+
+        setIsLoaded(true);
+    }, []);
+
+    useEffect(() => {
+        if (!isLoaded) {
+            return;
+        }
+
+        localStorage.setItem(
+            "projects",
+            JSON.stringify(projects)
+        );
+    }, [projects, isLoaded]);
 
     function handleDelete(id){
             setProjects(prevProjects=>(prevProjects.filter((p)=>(p.id!==id))))
